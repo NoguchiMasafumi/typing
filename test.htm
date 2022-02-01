@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+document.onkeyup=keyp; 
+
+function keyp(){
+var aa2=document.getElementById("a").value;
+var bb2=document.getElementById("b").value;
+var aalen=aa2.length;
+var bblen=bb2.length;
+
+if(bblen==0){}else{
+	for(i=0;i<bblen;i++)
+	{
+
+	haa=aa2.substr(i,1)
+	hbb=bb2.substr(i,1)
+		if(haa==hbb){
+
+var sht=document.getElementById("a").value;
+document.getElementById("test").innerHTML=(sht)
+		}else
+		{
+var sht=document.getElementById("a").value;
+document.getElementById("test").innerHTML=((sht.substring(0,i))+"<span style='color:#ff0000;'>"+sht.substr(i));
+		}
+	} 
+}
+}
+</script>
+</head>
+<body>
+
+<div id="test" style="font-weight:bold;">hoge</div>
+<input id="a" type="text" value="hoge"/>
+<input id="b" type="text" value=""/>
+<input type="button" value="•ÏŠ·" onClick="repl()">
+
+</body>
+<html>
+
